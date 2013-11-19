@@ -7,6 +7,9 @@
  */
 
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+@import url(http://fonts.googleapis.com/css?family=Sonsie+One);
+
 
 article,
 aside,
@@ -57,10 +60,16 @@ a:focus {
   outline: thin dotted;
 }
 
+
+
 a:active,
 a:hover {
   outline: 0;
 }
+
+.slider {
+  background: url('http://vector-media.net/images/parallax-bg1.png');
+} 
 
 h1 {
   margin: 0.67em 0;
@@ -370,10 +379,10 @@ img {
 }
 
 hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: -10px;
+  margin-bottom: 12px;
   border: 0;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #777;
 }
 
 .sr-only {
@@ -2298,8 +2307,8 @@ fieldset[disabled] .btn {
 .btn-default.active,
 .open .dropdown-toggle.btn-default {
   color: #333333;
-  background-color: #ebebeb;
-  border-color: #adadad;
+  background-color: #009980;
+  border-color: #009980;
 }
 
 .btn-default:active,
@@ -2329,8 +2338,8 @@ fieldset[disabled] .btn-default.active {
 
 .btn-primary {
   color: #ffffff;
-  background-color: #428bca;
-  border-color: #357ebd;
+  background-color: #02bb9d;
+  border-color: #02bb9d;
 }
 
 .btn-primary:hover,
@@ -2339,8 +2348,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #3276b1;
-  border-color: #285e8e;
+  background-color: #02bb9d;
+  border-color: #02bb9d;
 }
 
 .btn-primary:active,
@@ -4318,7 +4327,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar {
   position: relative;
-  min-height: 50px;
+  min-height: 125px;
   margin-bottom: 20px;
   border: 1px solid transparent;
 }
@@ -4489,8 +4498,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-brand {
   float: left;
   padding: 15px 15px;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 20px;
+  font-family: 'Sonsie One', cursive;
 }
 
 .navbar-brand:hover,
@@ -4534,6 +4544,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-nav {
+
   margin: 7.5px -15px;
 }
 
@@ -4541,6 +4552,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 20px;
+  opacity: 1;
 }
 
 @media (max-width: 767px) {
@@ -4796,12 +4808,16 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-inverse {
-  background-color: #222222;
+  background-color: #3C505A;
   border-color: #080808;
+  -webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
 }
 
 .navbar-inverse .navbar-brand {
   color: #999999;
+  padding-left: 70px;
 }
 
 .navbar-inverse .navbar-brand:hover,
@@ -4814,21 +4830,30 @@ textarea.input-group-sm > .input-group-btn > .btn {
   color: #999999;
 }
 
+.navbar-inverse .navbar-nav {
+  margin-left: -200px;
+  margin-top: 60px;
+}
+
 .navbar-inverse .navbar-nav > li > a {
-  color: #999999;
+  font-family: 'Varela Round', sans-serif;
+  margin-right: 35px;
+  color: #EDEDED;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
   color: #ffffff;
-  background-color: transparent;
+  border-radius: 4px;
+  background-color: #02bb9d;
 }
 
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: #ffffff;
-  background-color: #080808;
+  background-color: #02bb9d;
+  border-radius: 4px;
 }
 
 .navbar-inverse .navbar-nav > .disabled > a,
@@ -5738,6 +5763,7 @@ a.list-group-item.active:focus .list-group-item-text {
   border-bottom: 1px solid transparent;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
+  height: 40px;
 }
 
 .panel-heading > .dropdown .dropdown-toggle {
@@ -5773,6 +5799,7 @@ a.list-group-item.active:focus .list-group-item-text {
 }
 
 .panel-group .panel-heading {
+  height: 40px;
   border-bottom: 0;
 }
 
@@ -5793,8 +5820,9 @@ a.list-group-item.active:focus .list-group-item-text {
 }
 
 .panel-default > .panel-heading {
+  height: 40px;
   color: #333333;
-  background-color: #f5f5f5;
+  background-color: #283A41;
   border-color: #dddddd;
 }
 
@@ -5811,13 +5839,14 @@ a.list-group-item.active:focus .list-group-item-text {
 }
 
 .panel-primary {
-  border-color: #428bca;
+  border-color: #283A41;
 }
 
 .panel-primary > .panel-heading {
+  height: 40px;
   color: #ffffff;
-  background-color: #428bca;
-  border-color: #428bca;
+  background-color: #283A41;
+
 }
 
 .panel-primary > .panel-heading + .panel-collapse .panel-body {
@@ -5833,12 +5862,12 @@ a.list-group-item.active:focus .list-group-item-text {
 }
 
 .panel-success {
-  border-color: #d6e9c6;
+  border-color: #283A41;
 }
 
 .panel-success > .panel-heading {
-  color: #468847;
-  background-color: #dff0d8;
+  color: #fff;
+  background-color: #283A41;
   border-color: #d6e9c6;
 }
 
@@ -5899,12 +5928,12 @@ a.list-group-item.active:focus .list-group-item-text {
 }
 
 .panel-info {
-  border-color: #bce8f1;
+  border-color: #283A41;
 }
 
 .panel-info > .panel-heading {
-  color: #3a87ad;
-  background-color: #d9edf7;
+  color: #fff;
+  background-color: #283A41;
   border-color: #bce8f1;
 }
 
@@ -7095,4 +7124,121 @@ td.visible-print {
   td.hidden-print {
     display: none !important;
   }
+}
+
+
+.panel
+{
+    text-align: center;
+}
+.panel:hover { box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4), 0 1px 5px rgba(130, 130, 130, 0.35); }
+.panel-body
+{
+    padding: 0px;
+    text-align: center;
+}
+
+.the-price
+{
+    background-color: rgb(54,77,89);
+    padding: 20px;
+    margin: 0;
+}
+
+.the-price h1
+{
+  font-family: 'Varela Round', sans-serif;
+    line-height: 1em;
+    font-size: 60px;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.the-price h2
+{
+  font-family: 'Varela Round', sans-serif;
+    line-height: 1em;
+    color: #fff;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.subscript
+{
+    font-size: 25px;
+}
+
+/* CSS-only ribbon styles    */
+.cnrflash
+{
+    /*Position correctly within container*/
+    position: absolute;
+    top: -9px;
+    right: 4px;
+    z-index: 1; /*Set overflow to hidden, to mask inner square*/
+    overflow: hidden; /*Set size and add subtle rounding      to soften edges*/
+    width: 100px;
+    height: 100px;
+    border-radius: 3px 5px 3px 0;
+}
+.cnrflash-inner
+{
+    /*Set position, make larger then      container and rotate 45 degrees*/
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 145px;
+    height: 145px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -o-transform: rotate(45deg); /* Opera */
+    -moz-transform: rotate(45deg); /* Firefox */
+    -webkit-transform: rotate(45deg); /* Safari and Chrome */
+    -webkit-transform-origin: 100% 100%; /*Purely decorative effects to add texture and stuff*/ /* Safari and Chrome */
+    -ms-transform-origin: 100% 100%;  /* IE 9 */
+    -o-transform-origin: 100% 100%; /* Opera */
+    -moz-transform-origin: 100% 100%; /* Firefox */
+    background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.1) 50%), linear-gradient(0deg, transparent 0%, rgba(1,1,1,.2) 50%);
+    background-size: 4px,auto, auto,auto;
+    background-color: #aa0101;
+    box-shadow: 0 3px 3px 0 rgba(1,1,1,.5), 0 1px 0 0 rgba(1,1,1,.5), inset 0 -1px 8px 0 rgba(255,255,255,.3), inset 0 -1px 0 0 rgba(255,255,255,.2);
+}
+.cnrflash-inner:before, .cnrflash-inner:after
+{
+    /*Use the border triangle trick to make         it look like the ribbon wraps round it's        container*/
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: -16px;
+    width: 0;
+    height: 0;
+    border: 8px solid #800000;
+}
+.cnrflash-inner:before
+{
+    left: 1px;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+}
+.cnrflash-inner:after
+{
+    right: 0;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+.cnrflash-label
+{
+    /*Make the label look nice*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    padding-bottom: 5px;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(1,1,1,.8);
+    font-size: 0.95em;
+    font-weight: bold;
+    text-align: center;
 }
